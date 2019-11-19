@@ -28,7 +28,7 @@ test:
       proxied: false
   ttl: 1
   type: A
-  value: 163.172.155.56
+  value: 1.1.1.1
 www:
   octodns:
     cloudflare:

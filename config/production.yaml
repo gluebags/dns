@@ -9,7 +9,7 @@ providers:
     token: env/CLOUDFLARE_TOKEN
 
 zones:
-  cityrisk.net.:
+  crime.church.:
     sources:
       - config
     targets:
