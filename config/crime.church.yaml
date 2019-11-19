@@ -1,0 +1,38 @@
+---
+? ''
+: - octodns:
+      cloudflare:
+        proxied: false
+    ttl: 1
+    type: A
+    value: 163.172.141.63
+  - ttl: 1
+    type: MX
+    values:
+    - exchange: mxa.mailgun.org.
+      preference: 10
+    - exchange: mxb.mailgun.org.
+      preference: 10
+  - ttl: 1
+    type: TXT
+    values:
+    - google-site-verification=nlCT4tLn8e7C5qmc-WE_gjewbakeW0-H_BX_WCsm4mg
+    - v=spf1 include:mailgun.org ~all
+mailo._domainkey:
+  ttl: 1
+  type: TXT
+  value: k=rsa\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCnA67xxfthSC2x+WDtgHBlRH9fAa5f1q4Doxi2OmzXzR3sb1Me1tmaMqUWRraajIPZFRAkosg52qDkhFnAY3CrykTsV3qMQj8NPFAR5AaUo8XndLMuRC66DUi+G+8cc3qZzDuFFc5N1PwVZZa1u9ZTb/S/oHvszRwuRkqY//P5wQIDAQAB
+test:
+  octodns:
+    cloudflare:
+      proxied: false
+  ttl: 1
+  type: A
+  value: 163.172.155.56
+www:
+  octodns:
+    cloudflare:
+      proxied: true
+  ttl: 1
+  type: CNAME
+  value: crime.church.

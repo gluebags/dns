@@ -1,0 +1,131 @@
+---
+? ''
+: - ttl: 86400
+    type: MX
+    value:
+      exchange: cityrisk-net.mail.protection.outlook.com.
+      preference: 1
+  - ttl: 120
+    type: TXT
+    value: v=spf1 include:spf.protection.outlook.com -all
+_dmarc:
+  ttl: 120
+  type: TXT
+  value: v=DMARC1\; p=none\; rua=mailto:rua-dmarc@cityrisk.net\; ruf=forensic@cityrisk.net\;
+    fo=1\;
+aaa:
+  octodns:
+    cloudflare:
+      proxied: false
+  ttl: 1
+  type: A
+  value: 13.68.135.14
+asverify:
+  octodns:
+    cloudflare:
+      proxied: false
+  ttl: 1
+  type: CNAME
+  value: asverify.lxk.blob.core.windows.net.
+ath:
+  octodns:
+    cloudflare:
+      proxied: true
+  ttl: 1
+  type: CNAME
+  value: ath.cityrisk.workers.dev.
+autodiscover:
+  octodns:
+    cloudflare:
+      proxied: false
+  ttl: 1
+  type: CNAME
+  value: autodiscover.outlook.com.
+az:
+  ttl: 1
+  type: NS
+  value: ns1-04.azure-dns.com.
+bits:
+  octodns:
+    cloudflare:
+      proxied: true
+  ttl: 1
+  type: CNAME
+  value: lxk.blob.core.windows.net.
+cityrisk.onmicrosoft.com:
+  octodns:
+    cloudflare:
+      proxied: true
+  ttl: 1
+  type: CNAME
+  value: cityrisk.net.
+enterpriseenrollment:
+  octodns:
+    cloudflare:
+      proxied: false
+  ttl: 1
+  type: CNAME
+  value: enterpriseenrollment-s.manage.microsoft.com.
+f5:
+  octodns:
+    cloudflare:
+      proxied: false
+  ttl: 1
+  type: A
+  value: 13.73.97.88
+manictime:
+  octodns:
+    cloudflare:
+      proxied: true
+  ttl: 1
+  type: CNAME
+  value: lxk.azurewebsites.net.
+mt:
+  octodns:
+    cloudflare:
+      proxied: true
+  ttl: 1
+  type: CNAME
+  value: manictime.azurewebsites.net.
+pip:
+  octodns:
+    cloudflare:
+      proxied: true
+  ttl: 1
+  type: CNAME
+  value: ws.cityrisk.workers.dev.
+radius:
+  octodns:
+    cloudflare:
+      proxied: false
+  ttl: 1
+  type: A
+  value: 13.82.237.95
+selector1._domainkey:
+  octodns:
+    cloudflare:
+      proxied: false
+  ttl: 120
+  type: CNAME
+  value: selector1-cityrisk-net._domainkey.cityrisk.onmicrosoft.com.
+selector2._domainkey:
+  octodns:
+    cloudflare:
+      proxied: false
+  ttl: 120
+  type: CNAME
+  value: selector2-cityrisk-net._domainkey.cityrisk.onmicrosoft.com.
+sportphillip:
+  octodns:
+    cloudflare:
+      proxied: false
+  ttl: 1
+  type: A
+  value: 203.173.41.102
+static:
+  octodns:
+    cloudflare:
+      proxied: false
+  ttl: 1
+  type: A
+  value: 104.198.14.52
